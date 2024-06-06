@@ -1,0 +1,109 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.search-results, .bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.book-card p {
+  font-size: 0.9em;
+  margin: 5px 0;
+  color: #555;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+a {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  input {
+    width: 80%;
+    max-width: none;
+  }
+  
+  .book-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  input {
+    width: 90%;
+  }
+  
+  .book-card {
+    width: 100%;
+  }
+}
